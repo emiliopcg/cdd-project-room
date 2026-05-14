@@ -14,7 +14,7 @@ const HYP_STATUS = { pending: { color:”#f59e0b”, label:“Pendiente”, icon
 
 // ─── CLAUDE ───────────────────────────────────────────────────────────────────
 const claude = async (system, user) => {
-const r = await fetch(“https://urldefense.com/v3/__https://api.anthropic.com/v1/messages__;!!Nyu6ZXf5!tO4aY_2UoFZyzj10Ouw9coBMlb1jkanKHn-4eM_wtB8rnjSW2YK0FhDFExQZQKQN85j8biS0-lwBzIEeivMQ6G9ZRvQANibA$ ”, {
+const r = await fetch(“https://urldefense.com/v3/__https://api.anthropic.com/v1/messages__;!!Nyu6ZXf5!sq6YgluEaR9FbFa9FRK8gCQWMRMQf3HSsfUvJtRzU5ULLbCdd7uwjSj9QnSY2cbWnKP2Dj7Y4mzgFZxzaiaXeBca3tx6GnCd$ ”, {
 method: “POST”, headers: { “Content-Type”: “application/json” },
 body: JSON.stringify({ model: “claude-sonnet-4-20250514”, max_tokens: 1000, system, messages: [{ role: “user”, content: user }] }),
 });
